@@ -1,7 +1,8 @@
+import os
 import discord
 from discord.ext import commands, ipc
 
-TOKEN = ""
+TOKEN = os.environ.get('DISCORD_TOKEN')
 
 class MyBot(commands.Bot):
 
